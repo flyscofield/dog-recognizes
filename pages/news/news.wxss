@@ -1,0 +1,28 @@
+image {
+    width: 660rpx;  
+    height: 400rpx;  
+    /*max-width: 100%;  
+    max-height: 100%;  */
+} 
+
+
+.container-title {
+  /*margin-left: 15px;
+  margin-right: 15px;*/
+  padding-left: 20px;
+  /*padding-bottom: 10px;*/
+  flex-direction: column;
+  align-items: left;
+}
+
+.container {
+  margin-left: 20px;
+  margin-right: 15px; 
+  padding-top: 10px;
+  flex-direction: column;
+  align-items: left;  
+  /*background-color: #777;*/
+}
+
+
+

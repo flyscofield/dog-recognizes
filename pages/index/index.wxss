@@ -1,0 +1,21 @@
+/**index.wxss**/
+.section__ctn {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+image {
+  width: 100%;
+  height: 100%;
+}
+
+.section__camera {
+  width: 44%;
+  margin-left: 28%;
+  margin-top: -20px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}

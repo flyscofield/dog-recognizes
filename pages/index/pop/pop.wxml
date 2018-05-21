@@ -1,0 +1,52 @@
+<image class="img" src="data:image/jpeg;base64,{{dog_info.img}}" mode="widthFix" bindtap="showview">拍照的照片</image>  
+<view class="bg" bindtap='hideview' style='display:{{display}}'></view>  
+
+<scroll-view class="show" scroll-y="true" bindtap='hideview' style='display:{{display}};border-radius:5px'>
+
+  <image class="img_relative" mode="widthFix" src="data:image/jpeg;base64,{{dog_info.img}}" style='padding-top:10px'></image>  
+  <text>\n</text>
+  <view style="padding-left:15px;padding-top:25px;font-size:13px">
+    <text>名字：{{dog_info.name}}\n</text> 
+    <view style='padding-top:4px'></view>
+    <text>别名：{{dog_info.nickname}}</text>
+  </view>
+
+  <view>
+    <view style='padding-top:4px'></view>
+    <text class='testColor'>掉毛程度：{{dog_info.diaomao}}</text> 
+    <text class='testMargin'>体型：{{dog_info.shape}}\n</text>
+
+    <view style='padding-top:4px'></view>
+    <text class='testColor'>可训练度：{{dog_info.train}}</text> 
+    <text class='testMargin'>寿命：{{dog_info.age}}\n</text>
+
+    <view style='padding-top:4px'></view>
+    <text class='testColor'>黏人程度：{{dog_info.nianren}}</text>
+    <text class='testMargin'>价格区间：{{dog_info.price}}\n</text>
+
+    <view style='padding-top:4px'></view>
+    <text class='testColor'>喜叫程度：{{dog_info.bark}}</text>
+    <text class='testMargin'>毛长：{{dog_info.furlength}}\n</text>
+
+    <view style='padding-top:4px'></view>
+    <text class='testColor'>体味程度：{{dog_info.smell}}</text>
+    <text class='testMargin'>原厂地：{{dog_info.home}}\n</text>
+
+    <view style='padding-top:4px'></view>
+    <text class='testColor'>口水程度：{{dog_info.koushui}}</text>
+    <text class='testMargin'>功能：{{dog_info.func}}\n</text>
+
+    <view style='padding-top:4px'></view>
+    <text class='testColor'>友善程度：{{dog_info.friend}}</text>
+    <text class='testMargin'>身高：{{dog_info.high}}\n</text>
+
+    <view style='padding-top:4px'></view>
+    <text class='testColor'>耐寒程度：{{dog_info.cool}}</text>
+    <text class='testMargin'>耐热程度：{{dog_info.hot}}\n</text>
+
+    <view style='padding-top:4px'></view>
+    <view style='padding-left:15px'>
+    <text style='font-size:13px;'>详细信息：{{dog_info.extra}}原产自苏格兰，后移居到中国</text>
+    </view>
+  </view>
+</scroll-view> 

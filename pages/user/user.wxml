@@ -1,0 +1,28 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+</view>
+<scroll-view scroll-y="true" style='display:{{display}};'>
+  <view wx:for="{{data_list}}" wx:key="unique" wx:for-index="idx" wx:for-item="item">
+    <view style='text-align:center'>
+      <text class="myPageText">{{item.timestring}}</text>
+    </view>
+    <view class='container'>
+      <image src="data:image/png;base64, {{item.dis_image}}" mode="widthFix" style="width:700rpx"></image>
+    </view>
+      <text style="padding-left:14px;">{{item.name}}\n</text>
+      <text class="myPageText" style="font-size:11px">{{item.shape}}\n</text>
+    <view class='container'>
+      <view style='padding-top:10px'></view>
+      <view style='background:#777;height:0.5px;margin-left:15px;width:320px'></view>
+      <view style='padding-top:10px'></view>
+    </view>
+  </view>
+
+</scroll-view>

@@ -1,0 +1,25 @@
+<!-- <view style='text-align:center'>
+  <text style='font-size:25px;font-family:verdana'>懂汪社区\n\n</text>
+</view> -->
+
+<scroll-view class="news-list" style='display:{{display}};' scroll-y="true">
+  <view style='padding-top:10px'></view>
+  <view wx:for="{{topNews}}" wx:key="key">
+    <view class="news-item" data-title="{{item.title}}" data-url="{{item.url}}" catchtap="redictDetail">
+        <view class="container-title">    
+          <text>{{item.title}}\n</text>
+        </view>  
+
+        <view class="container">
+            <image src="{{item.thumbnail_pic_s}}" mode="scaleToFill" ></image> 
+        </view>  
+    </view>
+    
+    <view class='line'>
+      <view style='padding-top:10px'></view>
+      <view style='background:#dcdcdc;height:7px;width:550px'></view>
+      <view style='padding-top:10px'></view>
+    </view>
+  </view>
+</scroll-view>
+

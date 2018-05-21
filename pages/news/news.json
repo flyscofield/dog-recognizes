@@ -1,0 +1,5 @@
+{
+  "navigationBarTitleText": "社区",
+  "enablePullDownRefresh": true,
+  "onReachBottom" : true
+}

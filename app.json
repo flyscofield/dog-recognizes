@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/news/news",
+    "pages/user/user",
+    "pages/index/pop/pop",
+    "pages/detail/detail",
+    "pages/wxParse/wxParse.js"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "懂汪君",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh":false,
+    "onReachBottom": true,
+    "debug": true
+  },
+  "tabBar": {
+    "selectedColor": "#1296db",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "发现",
+        "iconPath": "img/black_camera.png",
+        "selectedIconPath": "img/blue_camera.png"
+      },
+      {
+        "pagePath": "pages/news/news",
+        "text": "社区",
+        "iconPath": "img/black_h.png",
+        "selectedIconPath": "img/blue_h.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "img/black_me.png",
+        "selectedIconPath": "img/blue_me.png"
+      }
+    ]
+  }
+}

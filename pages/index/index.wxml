@@ -1,0 +1,11 @@
+<!--index.wxml--> 
+<view class="page">
+  <view class="page__bd">
+    <view class="section__ctn">
+      <image style="background-color: #eeeeee" mode="widthFix" animation="{{animationData}}" src="{{img}}"></image>
+    </view>
+  </view>
+  <view class="section__camera" bindtap='addCamera'>
+    <image style="background-color: #eeeeee" mode="widthFix" src="img/pickdog.jpg " animation="{{animationData}}" ></image>
+  </view>
+</view>
